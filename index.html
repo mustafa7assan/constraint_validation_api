@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Constrains Validation API</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Validate Form Using Constrains Validation API</h3>
+      <div class="form-container">
+        <form novalidate>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+            <span class="error"></span>
+          </div>
+          <div class="form-row">
+            <label for="country">Country</label>
+            <input type="text" id="country" required />
+            <span class="error"></span>
+          </div>
+          <div class="form-row">
+            <label for="zip-cdoe">ZIP Code</label>
+            <input type="text" id="zip-code" required maxlength="5" />
+            <span class="error"></span>
+          </div>
+          <div class="form-row">
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" minlength="8" required />
+            <span class="error"></span>
+          </div>
+          <div class="form-row">
+            <label for="pwd-com">Password Confirmation</label>
+            <input type="password" id="pwd-com" minlength="8" required />
+            <span class="error"></span>
+          </div>
+          <div class="form-row">
+            <button>Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
